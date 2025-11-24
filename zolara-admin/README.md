@@ -1,208 +1,373 @@
-# 🎯 Zolara Admin Dashboard
+<div align="center">
+  <img src="../zolara-mobile/src/assets/images/brand/zolara.png" alt="Zolara Logo" width="200"/>
+  
+  # Zolara Admin
+  
+  ### Admin Dashboard for Zolara Platform
+  
+  [![React](https://img.shields.io/badge/React-19.2.0-61dafb.svg)](https://reactjs.org/)
+  [![Vite](https://img.shields.io/badge/Vite-7.2.2-646cff.svg)](https://vitejs.dev/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-blue.svg)](https://www.typescriptlang.org/)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.1.17-38bdf8.svg)](https://tailwindcss.com/)
+  
+  [🏠 Back to Main](../README.md)
+  
+</div>
 
-A modern, responsive admin dashboard for managing the Zolara social platform. Built with React 19, TypeScript, and Tailwind CSS, this dashboard provides comprehensive analytics and management tools for monitoring users, messages, and calls.
+---
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![React](https://img.shields.io/badge/React-19.2.0-61dafb?logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-3178c6?logo=typescript)
-![Vite](https://img.shields.io/badge/Vite-7.2.2-646cff?logo=vite)
+## 👥 Team Members
+
+- **Nguyễn Văn Minh**
+- **Nguyễn Trung Nguyên**
+
+---
+
+## 📋 Overview
+
+Zolara Admin is a powerful, responsive admin dashboard built with React and Vite. It provides comprehensive user management, analytics, and monitoring capabilities for the Zolara platform. The dashboard features real-time data visualization, user statistics, and administrative controls.
+
+---
 
 ## ✨ Features
 
-### 📊 Dashboard Overview
-- **Real-time Statistics**: Monitor total users, active users, messages, and calls
-- **Live Updates**: Automatic refresh of dashboard metrics
-- **User Activity Tracking**: View new user registrations by day and week
-- **Communication Metrics**: Track messaging and calling statistics
+- 📊 **Real-time Analytics** - Live statistics and performance metrics
+- 👥 **User Management** - Comprehensive user administration
+- 📈 **Data Visualization** - Interactive charts and graphs
+- 🔐 **Secure Authentication** - JWT-based admin authentication
+- 🌙 **Dark Mode Support** - Toggle between light and dark themes
+- 📱 **Responsive Design** - Works on desktop, tablet, and mobile
+- 🔍 **Search & Filter** - Advanced user search and filtering
+- 📋 **User Actions** - Block, unblock, and manage user accounts
+- 📊 **Dashboard Overview** - Key metrics at a glance
+- 📉 **User Statistics** - Detailed user activity analytics
+- ⚡ **Fast Performance** - Optimized with Vite for lightning-fast builds
+- 🎨 **Modern UI** - Clean and intuitive interface with Tailwind CSS
 
-### 📈 Analytics & Trends
-- **User Growth Chart**: Visualize user registration trends over time
-- **Message Activity Chart**: Monitor messaging patterns and volumes
-- **Call Distribution Chart**: Analyze call statistics and patterns
-- **Performance Metrics**: Track system performance indicators
-- **Interactive Charts**: Built with Chart.js for dynamic data visualization
+---
 
-### 🔐 Authentication & Security
-- **Secure Login**: JWT-based authentication system
-- **Protected Routes**: Role-based access control
-- **Session Management**: Automatic token refresh
-- **Logout Functionality**: Secure session termination
-
-### 🎨 User Interface
-- **Modern Design**: Clean and intuitive interface with gradient accents
-- **Responsive Layout**: Fully responsive design for all screen sizes
-- **Sidebar Navigation**: Collapsible sidebar for better space utilization
-- **Dark/Light Themes**: Beautiful color schemes with Tailwind CSS
-- **Loading States**: Smooth loading indicators for better UX
-- **Icon System**: Lucide React icons for consistent visuals
-
-### 📱 Responsive Design
-- Mobile-first approach
-- Tablet and desktop optimized layouts
-- Adaptive navigation and content display
-
-## 🚀 Tech Stack
+## 🛠️ Technology Stack
 
 ### Core Framework
-- **[React 19.2.0](https://react.dev/)** - Latest React with concurrent features
-- **[TypeScript 5.9.3](https://www.typescriptlang.org/)** - Type-safe development
-- **[Vite 7.2.2](https://vitejs.dev/)** - Lightning-fast build tool and dev server
+- **React** `19.2.0` - UI library with latest features
+- **Vite** `7.2.2` - Next-generation frontend build tool
+- **TypeScript** `5.9.3` - Type-safe JavaScript
+- **React DOM** `19.2.0` - React rendering
+
+### Routing
+- **React Router DOM** `7.9.6` - Declarative routing for React
 
 ### UI & Styling
-- **[Tailwind CSS 4.1.17](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[@tailwindcss/vite](https://www.npmjs.com/package/@tailwindcss/vite)** - Tailwind CSS Vite plugin
-- **[Lucide React](https://lucide.dev/)** - Beautiful icon library
-- **[Radix UI Icons](https://www.radix-ui.com/icons)** - Accessible icon components
-- **[class-variance-authority](https://cva.style/docs)** - Component variant management
-- **[clsx](https://github.com/lukeed/clsx)** - Conditional className utility
-- **[tailwind-merge](https://github.com/dcastil/tailwind-merge)** - Merge Tailwind classes
+- **Tailwind CSS** `4.1.17` - Utility-first CSS framework
+- **@tailwindcss/vite** `4.1.17` - Vite plugin for Tailwind
+- **tailwind-merge** `3.4.0` - Merge Tailwind classes
+- **class-variance-authority** `0.7.1` - Variant utilities
+- **clsx** `2.1.1` - Conditional classnames
+- **Lucide React** `0.553.0` - Beautiful icon library
+- **@radix-ui/react-icons** `1.3.2` - Radix UI icons
 
 ### Data Visualization
-- **[Chart.js 4.5.1](https://www.chartjs.org/)** - Flexible charting library
-- **[react-chartjs-2](https://react-chartjs-2.js.org/)** - React wrapper for Chart.js
+- **Chart.js** `4.5.1` - Powerful charting library
+- **react-chartjs-2** `5.3.1` - React wrapper for Chart.js
 
-### Routing & State
-- **[React Router DOM 7.9.6](https://reactrouter.com/)** - Client-side routing
-- **Context API** - Global state management for auth and dashboard data
+### UI Components
+- **react-loading-skeleton** `3.5.0` - Loading skeletons
 
-### HTTP & API
-- **[Axios 1.13.2](https://axios-http.com/)** - Promise-based HTTP client
-- **API Interceptors** - Automatic token management and error handling
+### HTTP Client
+- **Axios** `1.13.2` - Promise-based HTTP client
 
 ### Development Tools
-- **[ESLint 9](https://eslint.org/)** - Code linting and quality
-- **[TypeScript ESLint](https://typescript-eslint.io/)** - TypeScript-specific linting
-- **[Vite Plugin React](https://github.com/vitejs/vite-plugin-react)** - Fast refresh support
+- **@vitejs/plugin-react** `5.1.0` - Vite React plugin
+- **ESLint** `9.39.1` - Code linting
+- **@eslint/js** `9.39.1` - ESLint JavaScript configs
+- **eslint-plugin-react-hooks** `5.2.0` - React Hooks linting
+- **eslint-plugin-react-refresh** `0.4.24` - React Refresh linting
+- **TypeScript ESLint** `8.46.3` - TypeScript linting
+- **globals** `16.5.0` - Global variables
 
-## 📁 Project Structure
+---
+
+## 📂 Project Structure
 
 ```
 zolara-admin/
+├── public/
+│   └── env-config.template.js   # Runtime env config template
+│
 ├── src/
-│   ├── components/          # Reusable UI components
-│   │   ├── ui/             # Base UI components (Card, Charts, etc.)
-│   │   ├── AnalyticsSection.tsx
-│   │   ├── DashboardHeader.tsx
-│   │   ├── DashboardSidebar.tsx
-│   │   └── OverviewSection.tsx
-│   ├── contexts/           # React Context providers
-│   │   ├── AuthContext.tsx
+│   ├── main.tsx                 # Application entry point
+│   ├── App.tsx                  # Root component
+│   ├── index.css                # Global styles
+│   │
+│   ├── pages/                   # Page components
+│   │   ├── Dashboard.tsx        # Main dashboard page
+│   │   ├── Login.tsx            # Admin login page
+│   │   └── NotFound.tsx         # 404 page
+│   │
+│   ├── components/              # Reusable components
+│   │   ├── DashboardHeader.tsx  # Dashboard header
+│   │   ├── DashboardSidebar.tsx # Sidebar navigation
+│   │   ├── OverviewSection.tsx  # Overview section
+│   │   ├── AnalyticsSection.tsx # Analytics section
+│   │   ├── UserManagementSection.tsx # User management
+│   │   ├── UserStatisticsSection.tsx # User statistics
+│   │   │
+│   │   └── ui/                  # UI components
+│   │       ├── AnalyticsDashboard.tsx
+│   │       ├── Button.tsx
+│   │       ├── Card.tsx
+│   │       ├── Charts.tsx
+│   │       ├── ConfirmDialog.tsx
+│   │       ├── Input.tsx
+│   │       └── Skeleton.tsx
+│   │
+│   ├── contexts/                # React contexts
+│   │   ├── AuthContext.tsx      # Auth context provider
 │   │   ├── AuthContext.context.ts
 │   │   └── AuthContext.types.ts
-│   ├── hooks/              # Custom React hooks
-│   │   ├── useAuth.ts
-│   │   └── useDashboard.ts
-│   ├── lib/                # Utility functions
-│   │   └── utils.ts
-│   ├── pages/              # Page components
-│   │   ├── Dashboard.tsx
-│   │   └── Login.tsx
-│   ├── services/           # API services
-│   │   └── api.ts
-│   ├── types/              # TypeScript type definitions
-│   │   └── auth.types.ts
-│   ├── App.tsx             # Main app component
-│   ├── main.tsx            # Application entry point
-│   └── index.css           # Global styles
-├── public/                 # Static assets
-├── eslint.config.js        # ESLint configuration
-├── tailwind.config.js      # Tailwind CSS configuration
-├── tsconfig.json           # TypeScript configuration
-├── vite.config.ts          # Vite configuration
-└── package.json            # Project dependencies
+│   │
+│   ├── hooks/                   # Custom hooks
+│   │   ├── useAuth.ts           # Authentication hook
+│   │   ├── useDashboard.ts      # Dashboard data hook
+│   │   └── useUserStatistics.ts # User statistics hook
+│   │
+│   ├── services/                # API services
+│   │   └── api.ts               # API client
+│   │
+│   ├── lib/                     # Utilities
+│   │   ├── config.ts            # App configuration
+│   │   └── utils.ts             # Utility functions
+│   │
+│   ├── types/                   # TypeScript types
+│   │   └── auth.types.ts        # Auth types
+│   │
+│   └── assets/                  # Static assets
+│       └── ...
+│
+├── index.html                   # HTML entry point
+├── vite.config.ts              # Vite configuration
+├── tailwind.config.js          # Tailwind CSS config
+├── tsconfig.json               # TypeScript config
+├── tsconfig.app.json           # App TypeScript config
+├── tsconfig.node.json          # Node TypeScript config
+├── eslint.config.js            # ESLint configuration
+├── package.json                # Dependencies
+├── Dockerfile                  # Docker image
+├── nginx.conf                  # Nginx configuration
+├── docker-entrypoint.sh        # Docker entrypoint
+└── railway.json                # Railway deployment config
 ```
 
-## 🛠️ Getting Started
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js 18+ 
-- npm or yarn package manager
+- **Node.js** 18.x or higher
+- **npm** or **yarn** or **pnpm**
+
+### Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+VITE_API_URL=http://localhost:3000
+```
+
+For production, the environment variables are injected at runtime via `env-config.js`.
 
 ### Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/NguyenNguyen0/zolara.git
-cd zolara/zolara-admin
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+The app will be available at `http://localhost:5173`
+
+---
+
+## 🎯 Features Overview
+
+### Dashboard Overview Section
+- **Total Users** - Count of all registered users
+- **Active Users** - Currently active users
+- **Blocked Users** - Number of blocked accounts
+- **New Users** - Recent registrations
+- **Quick Actions** - Common admin tasks
+
+### Analytics Section
+- **User Growth Chart** - Visual representation of user growth over time
+- **Activity Metrics** - User engagement statistics
+- **Message Statistics** - Messaging activity data
+- **Call Statistics** - Voice/video call analytics
+- **Real-time Updates** - Live data refresh
+
+### User Management Section
+- **User List** - Comprehensive table of all users
+- **Search & Filter** - Find users quickly
+- **User Details** - View complete user profiles
+- **User Actions**:
+  - Block/Unblock users
+  - View user activity
+  - Manage permissions
+  - Reset passwords (future feature)
+- **Pagination** - Handle large user lists efficiently
+- **Sorting** - Sort by various criteria
+
+### User Statistics Section
+- **Demographic Data** - User distribution by age, location, etc.
+- **Activity Patterns** - When users are most active
+- **Feature Usage** - Which features are most popular
+- **Retention Metrics** - User retention analysis
+- **Interactive Charts** - Drill down into data
+
+---
+
+## 📊 Dashboard Components
+
+### Overview Cards
+Display key metrics with icons and trend indicators:
+```tsx
+- Total Users with growth percentage
+- Active Sessions
+- Message Volume
+- System Status
 ```
 
-2. Install dependencies:
-```bash
-npm install
+### Charts & Graphs
+Powered by Chart.js:
+- **Line Charts** - User growth over time
+- **Bar Charts** - Daily/weekly/monthly comparisons
+- **Pie Charts** - User distribution
+- **Area Charts** - Cumulative statistics
+
+### Data Tables
+Feature-rich user management tables:
+- Search functionality
+- Column sorting
+- Pagination
+- Row actions (block, view, edit)
+- Bulk operations
+- Export capabilities
+
+---
+
+## 🎨 Styling & Theming
+
+### Tailwind CSS Configuration
+
+The app uses Tailwind CSS 4.1.17 with custom configuration:
+
+```javascript
+// tailwind.config.js
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        // Custom color palette
+      },
+    },
+  },
+  plugins: [],
+}
 ```
 
-3. Create a `.env` file in the root directory:
-```env
-VITE_API_BASE_URL=http://localhost:3000/api/v1
+### Component Variants
+
+Using `class-variance-authority` for component variants:
+
+```tsx
+const buttonVariants = cva(
+  "inline-flex items-center justify-center rounded-md",
+  {
+    variants: {
+      variant: {
+        default: "bg-primary text-white",
+        outline: "border border-gray-300",
+      },
+      size: {
+        sm: "h-9 px-3",
+        lg: "h-11 px-8",
+      },
+    },
+  }
+)
 ```
 
-4. Start the development server:
+---
+
+## 🔐 Authentication
+
+### Admin Login
+- Email and password authentication
+- JWT token storage
+- Auto-refresh tokens
+- Protected routes
+- Session management
+
+### Auth Context
+
+```tsx
+const { login, logout, isAuthenticated, user } = useAuth();
+```
+
+---
+
+## 📡 API Integration
+
+### API Client Configuration
+
+```typescript
+// services/api.ts
+import axios from 'axios';
+
+const api = axios.create({
+  baseURL: import.meta.env.VITE_API_URL,
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
+
+// Request interceptor for auth token
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem('token');
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+});
+```
+
+### API Endpoints
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/api/auth/login` | POST | Admin login |
+| `/api/dashboard/stats` | GET | Dashboard statistics |
+| `/api/dashboard/users` | GET | User list |
+| `/api/dashboard/analytics` | GET | Analytics data |
+| `/api/dashboard/user/:id/block` | POST | Block user |
+| `/api/dashboard/user/:id/unblock` | POST | Unblock user |
+
+---
+
+## 🧪 Development
+
+### Running in Development Mode
+
 ```bash
 npm run dev
 ```
 
-5. Open your browser and navigate to `http://localhost:5173`
-
-## 🐳 Docker & Deployment
-
-### Docker Build & Run
-
-The application supports runtime environment variable configuration for Docker deployments:
-
-1. **Build the Docker image:**
-```bash
-docker build -t zolara-admin .
-```
-
-2. **Run with custom API URL:**
-```bash
-docker run -p 8080:80 -e VITE_API_BASE_URL=https://api.yourserver.com/api/v1 zolara-admin
-```
-
-3. **Using docker-compose:**
-```yaml
-version: '3.8'
-services:
-  admin:
-    build: .
-    ports:
-      - "8080:80"
-    environment:
-      - VITE_API_BASE_URL=https://api.yourserver.com/api/v1
-      - PORT=80
-```
-
-### Railway Deployment
-
-The project is configured for Railway deployment with automatic environment variable injection:
-
-1. **Connect your GitHub repository to Railway**
-
-2. **Set environment variables in Railway dashboard:**
-   - `VITE_API_BASE_URL` - Your API backend URL (e.g., `https://api.yourapp.com/api/v1`)
-   - `PORT` - Will be automatically set by Railway
-
-3. **Deploy:**
-   Railway will automatically detect the `Dockerfile` and build your application.
-
-### How Runtime Configuration Works
-
-The application uses a runtime configuration injection system:
-
-- **Development**: Uses `.env` file with Vite's `import.meta.env`
-- **Production (Docker/Railway)**: 
-  1. Environment variables are injected at container startup
-  2. `docker-entrypoint.sh` generates `env-config.js` with runtime values
-  3. Application reads from `window._env_` object
-  4. Falls back to build-time values if runtime config is unavailable
-
-This approach allows you to:
-- Use the same Docker image across different environments
-- Change API URL without rebuilding
-- Deploy to Railway with environment-specific configuration
-
-### Build for Production
+### Building for Production
 
 ```bash
 npm run build
@@ -214,96 +379,232 @@ npm run build
 npm run preview
 ```
 
-## 🔧 Configuration
+### Linting
 
-### Environment Variables
-
-Create a `.env` file with the following variables:
-
-```env
-# API Configuration
-VITE_API_BASE_URL=http://localhost:3000/api/v1
-
-# Optional: Other configuration
-VITE_APP_NAME=Zolara Admin
+```bash
+npm run lint
 ```
-
-### Tailwind Configuration
-
-The project uses Tailwind CSS 4 with custom color schemes. See `tailwind.config.js` for customization options.
-
-## 📝 Available Scripts
-
-| Script | Description |
-|--------|-------------|
-| `npm run dev` | Start development server with hot reload |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build locally |
-| `npm run lint` | Run ESLint to check code quality |
-
-## 🔐 Authentication
-
-The dashboard uses JWT-based authentication. Users must log in with valid credentials to access the dashboard features.
-
-### Login Flow:
-1. User enters email/phone and password
-2. Credentials sent to backend API
-3. JWT token received and stored in localStorage
-4. Protected routes accessible with valid token
-5. Auto-redirect to login on token expiration
-
-## 📊 Dashboard Features
-
-### Overview Section
-- Total registered users
-- Currently active users
-- New user registrations (daily/weekly)
-- Total messages sent
-- Message statistics (today/this week)
-- Active calls monitoring
-- Total calls and average duration
-
-### Analytics Section
-- User growth trends with interactive charts
-- Message activity patterns
-- Call distribution analysis
-- Performance metrics visualization
-- Real-time session statistics
-
-## 🎨 UI Components
-
-The dashboard includes reusable UI components:
-- **Card**: Container component with header and content
-- **Charts**: Various chart types using Chart.js
-- **Sidebar**: Collapsible navigation sidebar
-- **Header**: Dashboard header with user info and logout
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is part of the Zolara platform.
-
-## 👥 Authors
-
-- **NguyenNguyen0** - [GitHub Profile](https://github.com/NguyenNguyen0)
-
-## 🙏 Acknowledgments
-
-- React team for the amazing framework
-- Tailwind CSS for the utility-first CSS framework
-- Chart.js for beautiful data visualizations
-- Lucide for the icon library
-- The open-source community
 
 ---
 
-Built with ❤️ using React, TypeScript, and Tailwind CSS
+## 🐳 Docker Deployment
+
+### Using Docker
+
+```bash
+docker build -t zolara-admin .
+docker run -p 80:80 zolara-admin
+```
+
+### Docker Compose
+
+```yaml
+version: '3.8'
+services:
+  admin:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - API_URL=https://api.zolara.com
+```
+
+### Nginx Configuration
+
+The app includes production-ready Nginx configuration with:
+- SPA routing support
+- Gzip compression
+- Security headers
+- API proxy configuration (optional)
+
+---
+
+## 🚀 Deployment
+
+### Railway Deployment
+
+The project includes `railway.json` configuration:
+
+```json
+{
+  "build": {
+    "builder": "DOCKERFILE",
+    "dockerfilePath": "Dockerfile"
+  },
+  "deploy": {
+    "startCommand": "nginx -g 'daemon off;'",
+    "healthcheckPath": "/",
+    "healthcheckTimeout": 100
+  }
+}
+```
+
+### Environment Variables at Runtime
+
+The app uses a runtime configuration system via `env-config.js`:
+
+```javascript
+window._env_ = {
+  API_URL: "${API_URL}",
+};
+```
+
+This is replaced by the actual values at container startup via `docker-entrypoint.sh`.
+
+---
+
+## 📊 Dashboard Metrics
+
+### Real-time Statistics
+- User count updates
+- Active sessions
+- System health
+- API response times
+
+### Historical Data
+- User growth trends
+- Activity patterns
+- Feature usage
+- Performance metrics
+
+---
+
+## 🔧 Configuration Files
+
+### Vite Configuration (`vite.config.ts`)
+
+```typescript
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    port: 5173,
+    host: true,
+  },
+})
+```
+
+### TypeScript Configuration
+
+Three configuration files for different contexts:
+- `tsconfig.json` - Base configuration
+- `tsconfig.app.json` - App-specific settings
+- `tsconfig.node.json` - Node environment settings
+
+---
+
+## 🎨 UI Components
+
+### Button Component
+```tsx
+<Button variant="default" size="lg">
+  Click Me
+</Button>
+```
+
+### Card Component
+```tsx
+<Card>
+  <CardHeader>Title</CardHeader>
+  <CardContent>Content here</CardContent>
+</Card>
+```
+
+### Charts
+```tsx
+<LineChart data={userData} />
+<BarChart data={activityData} />
+<PieChart data={distributionData} />
+```
+
+---
+
+## 🔧 Scripts Reference
+
+| Script | Description |
+|--------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Lint code |
+
+---
+
+## 📱 Responsive Design
+
+The dashboard is fully responsive with breakpoints for:
+- **Mobile** (< 640px)
+- **Tablet** (640px - 1024px)
+- **Desktop** (> 1024px)
+
+Sidebar converts to mobile menu on small screens.
+
+---
+
+## 🔍 Advanced Features
+
+### Search Functionality
+- Real-time user search
+- Multi-field search (name, email, phone)
+- Debounced input for performance
+
+### Filtering
+- Filter by user status
+- Filter by registration date
+- Filter by user role
+- Combine multiple filters
+
+### Sorting
+- Sort by username
+- Sort by registration date
+- Sort by activity level
+- Ascending/descending order
+
+---
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+**Port already in use:**
+```bash
+# Change port in vite.config.ts or use:
+npm run dev -- --port 3001
+```
+
+**API connection issues:**
+- Check `.env` file has correct API URL
+- Verify CORS settings on backend
+- Check network/firewall settings
+
+**Build errors:**
+```bash
+rm -rf node_modules dist
+npm install
+npm run build
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🔗 Related Projects
+
+- [Zolara Server](../zolara-server/README.md) - Backend API server
+- [Zolara Mobile](../zolara-mobile/README.md) - Mobile application
+
+---
+
+<div align="center">
+  
+**Built with ❤️ by the Zolara Team**
+
+[🏠 Back to Main](../README.md)
+
+</div>

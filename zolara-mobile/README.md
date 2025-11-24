@@ -1,428 +1,227 @@
-# 📱 Zolara Mobile
-
 <div align="center">
   <img src="./src/assets/images/brand/zolara.png" alt="Zolara Logo" width="200"/>
   
-  <p><strong>Modern Social Messaging Platform</strong></p>
+  # Zolara Mobile
   
-  [![Expo](https://img.shields.io/badge/Expo-54.0.25-blue.svg)](https://expo.dev)
+  ### Cross-Platform Mobile App for Real-Time Communication
+  
+  [![Expo](https://img.shields.io/badge/Expo-54.0.25-000020.svg)](https://expo.dev/)
   [![React Native](https://img.shields.io/badge/React%20Native-0.81.5-61dafb.svg)](https://reactnative.dev/)
   [![TypeScript](https://img.shields.io/badge/TypeScript-5.9.2-blue.svg)](https://www.typescriptlang.org/)
-  [![License](https://img.shields.io/badge/License-Private-red.svg)]()
+  [![Expo Router](https://img.shields.io/badge/Expo%20Router-6.0.15-000020.svg)](https://docs.expo.dev/router/introduction/)
+  
+  [🏠 Back to Main](../README.md)
+  
 </div>
 
 ---
 
-## 📋 Table of Contents
+## 👥 Team Members
 
-- [Introduction](#-introduction)
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [System Requirements](#-system-requirements)
-- [Installation](#-installation)
-- [Configuration](#-configuration)
-- [Running the App](#-running-the-app)
-- [Building](#-building)
-- [Project Structure](#-project-structure)
-- [Scripts](#-scripts)
-- [Architecture](#-architecture)
-- [Testing](#-testing)
-- [Deployment](#-deployment)
-- [Troubleshooting](#-troubleshooting)
-- [Contributing](#-contributing)
+- **Nguyễn Văn Minh**
+- **Nguyễn Trung Nguyên**
 
 ---
 
-## 🌟 Introduction
+## 📋 Overview
 
-**Zolara Mobile** is a cross-platform mobile application (iOS, Android, Web) built with React Native and Expo. The app provides real-time messaging, social networking, and many modern interactive features.
-
-### Key Highlights
-
-- 🚀 **High Performance** with React Native New Architecture
-- 🎨 **Beautiful UI** with TailwindCSS and GluestackUI
-- 💬 **Real-time Messaging** with Socket.IO
-- 📞 **Video/Audio Calls** with WebRTC
-- 🤖 **AI Chatbot** Integration
-- 🌙 **Auto Dark Mode**
-- 📱 **Cross-platform** - iOS, Android, Web
+Zolara Mobile is a feature-rich, cross-platform mobile application built with Expo and React Native. It provides seamless real-time messaging, voice/video calling, AI chatbot integration, and social networking features for iOS, Android, and Web platforms.
 
 ---
 
 ## ✨ Features
 
-### 🔐 Authentication & Security
-- ✅ Email registration/login
-- ✅ OTP verification via email
-- ✅ Password recovery
-- ✅ Secure token storage with Expo Secure Store
-
-### 💬 Messaging
-- ✅ Text messages with emoji support
-- ✅ Send images, videos, audio
-- ✅ Document sharing
-- ✅ Voice messages
-- ✅ Message forwarding
-- ✅ Reply to messages
-- ✅ Delete and recall messages
-- ✅ Emoji reactions
-- ✅ Read receipts and delivery status
-- ✅ Typing indicators
-
-### 👥 Group Management
-- ✅ Create group chats
-- ✅ Add/remove members
-- ✅ Admin permissions
-- ✅ Change group name and avatar
-- ✅ Leave group
-
-### 📞 Calling
-- ✅ 1-to-1 voice/video calls
-- ✅ Group calls
-- ✅ WebRTC integration
-
-### 🤖 AI Features
-- ✅ AI chatbot assistant
-- ✅ AI image generation
-- ✅ Image analysis
-
-### 📰 Social Network
-- ✅ Create posts
-- ✅ Like, comment, share
-- ✅ Upload photos/videos
-- ✅ Personalized news feed
-
-### 👤 Account Management
-- ✅ Update personal information
-- ✅ Change avatar
-- ✅ Privacy settings
-- ✅ Notification management
-
-### 📱 Other Features
-- ✅ Contact sync
-- ✅ QR Code for friend requests
-- ✅ User search
-- ✅ Push notifications
-- ✅ Background tasks
-- ✅ Offline mode
-- ✅ Multi-language support
+- 💬 **Real-time Messaging** - Instant chat with friends and groups
+- 📞 **Voice & Video Calls** - High-quality WebRTC-based calling
+- 🤖 **AI Chatbot** - Intelligent AI assistant for conversations
+- 👥 **Group Chats** - Create and manage group conversations
+- 👫 **Friend Management** - Send friend requests, manage contacts
+- 📸 **Media Sharing** - Images, videos, documents, and voice messages
+- 🔔 **Push Notifications** - Real-time notification system
+- 🌙 **Dark Mode** - Full theme customization support
+- 📱 **Cross-Platform** - iOS, Android, and Web support
+- 🎵 **Voice Messages** - Record and send audio messages
+- 📹 **Video Messages** - Share video clips
+- 📄 **Document Sharing** - Send and receive files
+- 🔐 **Secure Authentication** - JWT-based auth with secure storage
+- 📊 **User Status** - Online/offline indicators
+- 🔍 **Contact Sync** - Sync phone contacts
+- 🎨 **Customizable UI** - Personalize your experience
+- 📰 **News Feed** - Social posts and updates
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Technology Stack
 
-### Core Technologies
-- **[React Native 0.81.5](https://reactnative.dev/)** - Core framework
-- **[Expo SDK 54](https://expo.dev/)** - Development platform
-- **[TypeScript 5.9.2](https://www.typescriptlang.org/)** - Type safety
-- **[Expo Router](https://docs.expo.dev/router/introduction/)** - File-based routing
+### Core Framework
+- **Expo** `54.0.25` - Universal React framework
+- **React** `19.1.0` - UI library
+- **React Native** `0.81.5` - Cross-platform mobile framework
+- **TypeScript** `5.9.2` - Type-safe JavaScript
+- **Expo Router** `6.0.15` - File-based routing
 
-### UI & Styling
-- **[NativeWind](https://www.nativewind.dev/)** - TailwindCSS for React Native
-- **[GluestackUI](https://gluestack.io/)** - Component library
-- **[Lucide Icons](https://lucide.dev/)** - Icon library
-- **[React Native Elements](https://reactnativeelements.com/)** - Additional components
+### Navigation
+- **@react-navigation/native** `7.0.14` - Navigation library
+- **@react-navigation/bottom-tabs** `7.2.0` - Bottom tab navigation
+- **expo-router** `6.0.15` - File-based navigation
+
+### UI Libraries & Styling
+- **NativeWind** `4.1.23` - Tailwind CSS for React Native
+- **Tailwind CSS** `3.4.17` - Utility-first CSS framework
+- **GlueStack UI** - Comprehensive component library:
+  - `@gluestack-ui/button` `1.0.8`
+  - `@gluestack-ui/input` `0.1.32`
+  - `@gluestack-ui/avatar` `0.1.18`
+  - `@gluestack-ui/toast` `1.0.9`
+  - `@gluestack-ui/menu` `0.2.43`
+  - `@gluestack-ui/alert` `0.1.16`
+  - `@gluestack-ui/actionsheet` `0.2.46`
+  - And more...
+- **@rneui/themed** `4.0.0-rc.8` - React Native Elements
+- **lucide-react-native** `0.469.0` - Icon library
+- **@expo/vector-icons** `15.0.3` - Vector icons
+- **@legendapp/motion** `2.4.0` - Animations
 
 ### State Management
-- **[Zustand](https://zustand-demo.pmnd.rs/)** - Lightweight state management
-- **[React Context](https://react.dev/reference/react/useContext)** - Global state
+- **Zustand** `5.0.3` - Lightweight state management
+- **@react-native-community/netinfo** `11.4.1` - Network status
 
-### Networking & Communication
-- **[Axios](https://axios-http.com/)** - HTTP client
-- **[Socket.IO Client](https://socket.io/docs/v4/client-api/)** - Real-time communication
-- **[React Native WebRTC](https://github.com/react-native-webrtc/react-native-webrtc)** - Video/Audio calls
+### Real-time Communication
+- **Socket.IO Client** `4.8.1` - WebSocket client
+- **React Native WebRTC** `124.0.5` - Video/voice calling
+- **@config-plugins/react-native-webrtc** `10.0.0` - WebRTC config plugin
 
-### Media & Files
-- **[Expo Image](https://docs.expo.dev/versions/latest/sdk/image/)** - Optimized images
-- **[Expo Video](https://docs.expo.dev/versions/latest/sdk/video/)** - Video playback
-- **[Expo AV](https://docs.expo.dev/versions/latest/sdk/av/)** - Audio/Video
-- **[Expo Camera](https://docs.expo.dev/versions/latest/sdk/camera/)** - Camera access
-- **[Expo Image Picker](https://docs.expo.dev/versions/latest/sdk/imagepicker/)** - Pick images/videos
-- **[Expo Document Picker](https://docs.expo.dev/versions/latest/sdk/document-picker/)** - Pick documents
+### Media & File Handling
+- **expo-image** `3.0.10` - Optimized image component
+- **expo-image-picker** `17.0.8` - Pick images from device
+- **expo-camera** `17.0.9` - Camera access
+- **expo-av** `16.0.7` - Audio/video playback
+- **expo-video** `3.0.14` - Video player
+- **expo-video-thumbnails** `10.0.7` - Generate video thumbnails
+- **expo-document-picker** `14.0.7` - Document picker
+- **expo-file-system** `19.0.19` - File system access
+- **react-native-image-viewing** `0.2.2` - Image viewer
+- **react-native-qrcode-svg** `6.3.15` - QR code generation
+
+### Native Features
+- **expo-contacts** `15.0.10` - Access device contacts
+- **expo-notifications** `0.32.13` - Push notifications
+- **expo-secure-store** `15.0.7` - Secure storage
+- **expo-haptics** `15.0.7` - Haptic feedback
+- **expo-linking** `8.0.9` - Deep linking
+- **expo-sharing** `14.0.7` - Share content
+- **expo-web-browser** `15.0.9` - In-app browser
+- **expo-splash-screen** `31.0.11` - Splash screen
+
+### Background Tasks
+- **expo-background-fetch** `14.0.8` - Background fetch
+- **expo-task-manager** `14.0.8` - Task scheduling
+
+### UI Components & Utilities
+- **react-native-gesture-handler** `2.28.0` - Gesture system
+- **react-native-reanimated** `4.1.1` - Advanced animations
+- **react-native-safe-area-context** `5.6.0` - Safe area handling
+- **react-native-screens** `4.16.0` - Native screen management
+- **react-native-svg** `15.12.1` - SVG support
+- **expo-blur** `15.0.7` - Blur effects
+- **expo-linear-gradient** `15.0.7` - Gradient components
+
+### Form & Input
+- **react-native-date-picker** `5.0.9` - Date picker
+- **@react-native-community/datetimepicker** `8.4.4` - DateTime picker
+- **react-native-modal-datetime-picker** `18.0.0` - Modal date picker
+- **react-native-otp-entry** `1.8.5` - OTP input
+- **rn-emoji-keyboard** `1.7.0` - Emoji keyboard
+- **react-native-emoji-selector** `0.2.0` - Emoji selector
+
+### Networking
+- **Axios** `1.7.9` - HTTP client
+- **@react-native-community/netinfo** `11.4.1` - Network info
 
 ### Utilities
-- **[Expo Notifications](https://docs.expo.dev/versions/latest/sdk/notifications/)** - Push notifications
-- **[Expo Secure Store](https://docs.expo.dev/versions/latest/sdk/securestore/)** - Secure storage
-- **[Expo Contacts](https://docs.expo.dev/versions/latest/sdk/contacts/)** - Access contacts
-- **[Expo Background Fetch](https://docs.expo.dev/versions/latest/sdk/background-fetch/)** - Background tasks
-- **[NetInfo](https://github.com/react-native-netinfo/react-native-netinfo)** - Network status
+- **lodash** `4.17.21` - Utility functions
+- **clsx** `2.1.1` - Conditional classnames
+- **uuid** `11.1.0` - UUID generation
+- **react-native-uuid** `2.0.3` - UUID for React Native
+- **react-native-restart** `0.0.27` - App restart
+- **react-native-markdown-display** `7.0.2` - Markdown renderer
+- **react-native-toast-message** `2.3.0` - Toast notifications
 
 ### Development Tools
-- **[Prettier](https://prettier.io/)** - Code formatting
-- **[ESLint](https://eslint.org/)** - Code linting
-- **[Husky](https://typicode.github.io/husky/)** - Git hooks
-- **[Lint-staged](https://github.com/okonet/lint-staged)** - Pre-commit linting
-- **[Jest](https://jestjs.io/)** - Testing framework
+- **Jest** `29.2.1` - Testing framework
+- **jest-expo** `54.0.13` - Expo Jest preset
+- **Husky** `9.1.7` - Git hooks
+- **lint-staged** `15.3.0` - Lint staged files
+- **Prettier** `3.4.2` - Code formatter
+- **cross-env** `7.0.3` - Cross-platform env variables
 
 ---
 
-## 💻 System Requirements
-
-### Development
-- **Node.js**: >= 18.0.0
-- **npm** or **yarn** or **pnpm**
-- **Git**: >= 2.0.0
-- **EAS CLI**: >= 16.23.0 (optional, for production builds)
-
-### For iOS Development
-- **macOS**: 12.0 or higher
-- **Xcode**: 14.0 or higher
-- **iOS Simulator** or **iOS device** (iOS 13.0+)
-- **CocoaPods**: >= 1.11.0
-
-### For Android Development
-- **Android Studio**: Arctic Fox or higher
-- **Android SDK**: API Level 23 (Android 6.0) or higher
-- **JDK**: 17 (recommended)
-- **Android Emulator** or **Android device**
-
----
-
-## 🚀 Installation
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/NguyenNguyen0/zolara.git
-cd zolara/zolara-mobile
-```
-
-### 2. Install dependencies
-
-```bash
-# Using npm
-npm install
-
-# Or yarn
-yarn install
-
-# Or pnpm
-pnpm install
-```
-
-### 3. Install Expo CLI (if not already installed)
-
-```bash
-npm install -g expo-cli
-```
-
-### 4. Install EAS CLI (for production builds)
-
-```bash
-npm install -g eas-cli
-```
-
-### 5. Login to Expo (if you don't have an account)
-
-```bash
-expo login
-# or
-eas login
-```
-
----
-
-## ⚙️ Configuration
-
-### 1. Create environment file
-
-Copy `.env.example` to `.env`:
-
-```bash
-cp .env.example .env
-```
-
-### 2. Configure environment variables
-
-Edit the `.env` file:
-
-```env
-# API URL - Backend server URL
-EXPO_PUBLIC_API_URL=https://your-backend-url.com/api/v1
-
-# Or for local development
-EXPO_PUBLIC_API_URL=http://localhost:3000/api/v1
-```
-
-> **Note**: 
-> - For Android Emulator: use `http://10.0.2.2:3000/api/v1`
-> - For iOS Simulator on same machine: use `http://localhost:3000/api/v1`
-> - For physical devices: use your computer's LAN IP address
-
-### 3. Configure EAS (for production builds)
-
-The `eas.json` file is pre-configured with the following profiles:
-
-- **development**: Development build with dev client
-- **preview**: APK/IPA build for internal testing
-- **production**: Production build (App Bundle/IPA)
-- **apk**: APK build for Android
-
----
-
-## 🏃 Running the App
-
-### Development Mode
-
-#### Run on multiple platforms
-
-```bash
-# Start Metro bundler
-npm start
-
-# Or with options
-npm start -- --clear  # Clear cache
-```
-
-Then select platform:
-- Press `a` - Open Android
-- Press `i` - Open iOS
-- Press `w` - Open Web
-
-#### Run directly on specific platform
-
-```bash
-# Android
-npm run android
-
-# iOS (macOS only)
-npm run ios
-
-# Web
-npm run web
-```
-
-### With Expo Go App
-
-1. Install **Expo Go** on your phone:
-   - iOS: [App Store](https://apps.apple.com/app/expo-go/id982107779)
-   - Android: [Google Play](https://play.google.com/store/apps/details?id=host.exp.exponent)
-
-2. Run the app:
-   ```bash
-   npm start
-   ```
-
-3. Scan the QR code with Expo Go app
-
-> **Note**: Some features like WebRTC and Background tasks may not work on Expo Go. You need to build a development client.
-
-### Development Build (Recommended)
-
-```bash
-# Build development client for Android
-eas build --profile development --platform android
-
-# Build development client for iOS
-eas build --profile development --platform ios
-
-# Install the build on your device and run
-npm start --dev-client
-```
-
----
-
-## 📦 Building
-
-### Preview Build (Internal Testing)
-
-```bash
-# Android APK
-eas build --profile preview --platform android
-
-# iOS (requires Apple Developer Account)
-eas build --profile preview --platform ios
-```
-
-### Production Build
-
-```bash
-# Android App Bundle (for Google Play)
-eas build --profile production --platform android
-
-# iOS (for App Store)
-eas build --profile production --platform ios
-
-# Build both platforms
-eas build --profile production --platform all
-```
-
-### Build standalone APK (not for store)
-
-```bash
-eas build --profile apk --platform android
-```
-
-### Local Build (without EAS)
-
-```bash
-# Android
-npx expo run:android --variant release
-
-# iOS
-npx expo run:ios --configuration Release
-```
-
----
-
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```
 zolara-mobile/
-├── app/                          # Expo Router - File-based routing
+├── app/                          # Expo Router screens
 │   ├── _layout.tsx              # Root layout
-│   ├── index.tsx                # Entry screen
+│   ├── index.tsx                # Landing page
 │   ├── +not-found.tsx           # 404 page
-│   └── (screens)/               # Screen groups
-│       ├── (auth)/              # Authentication screens
+│   │
+│   └── (screens)/               # Main screens
+│       ├── _layout.tsx
+│       │
+│       ├── (auth)/              # Authentication flows
 │       │   ├── welcome.tsx
 │       │   ├── login.email.tsx
-│       │   ├── signup.*.tsx
-│       │   └── verify.tsx
-│       ├── (tabs)/              # Main tab screens
-│       │   ├── index.tsx        # Home/Chat
+│       │   ├── signup.name.tsx
+│       │   ├── signup.email.tsx
+│       │   ├── signup.detail.tsx
+│       │   ├── verify.tsx
+│       │   ├── login.success.tsx
+│       │   ├── confirm.password.tsx
+│       │   └── forgot/
+│       │
+│       ├── (tabs)/              # Main tab navigation
+│       │   ├── _layout.tsx
+│       │   ├── index.tsx        # Home/Chats
 │       │   ├── contacts/        # Contacts tab
 │       │   ├── discover/        # Discover tab
-│       │   ├── news/            # News feed tab
-│       │   └── info/            # Profile tab
+│       │   ├── news/            # News feed
+│       │   └── info/            # Profile/Settings
+│       │
 │       └── (user)/              # User-specific screens
 │           ├── chat/            # Chat screens
 │           ├── chatbot/         # AI chatbot
 │           ├── friend/          # Friend management
-│           ├── group/           # Group management
+│           ├── group/           # Group screens
 │           ├── info/            # User info
 │           └── settings/        # Settings
 │
 ├── src/
-│   ├── assets/                  # Static assets
-│   │   ├── fonts/              # Custom fonts
-│   │   ├── images/             # Images
-│   │   ├── sounds/             # Sound files
-│   │   └── svgs/               # SVG icons
-│   │
 │   ├── components/              # Reusable components
-│   │   ├── chat/               # Chat-related components
+│   │   ├── ChatItem.tsx
+│   │   ├── ConversationList.tsx
+│   │   ├── CustomToast.tsx
+│   │   ├── GroupDetailsModal.tsx
+│   │   ├── MessageForwardModal.tsx
+│   │   ├── UserStatusIndicator.tsx
+│   │   │
+│   │   ├── chat/               # Chat components
+│   │   │   ├── chat.header.tsx
+│   │   │   ├── message.bubble.tsx
+│   │   │   ├── message.actions.tsx
+│   │   │   ├── media.preview.tsx
+│   │   │   ├── media.grid.tsx
+│   │   │   ├── audio.message.tsx
+│   │   │   ├── video.message.tsx
+│   │   │   ├── voice.recorder.tsx
+│   │   │   ├── image.viewer.tsx
+│   │   │   └── document.preview.tsx
+│   │   │
 │   │   ├── customize/          # Customization components
 │   │   ├── post/               # Post components
 │   │   └── ui/                 # UI components
 │   │
-│   ├── constants/               # Constants & configurations
-│   │   └── Colors.ts
-│   │
-│   ├── hooks/                   # Custom React hooks
-│   │   ├── useAuth.ts
-│   │   ├── useSocket.ts
-│   │   ├── useColorScheme.ts
-│   │   └── useThemeColor.ts
-│   │
-│   ├── lib/                     # External libraries config
-│   │   ├── axios.ts            # Axios configuration
-│   │   └── socket.ts           # Socket.IO configuration
-│   │
-│   ├── providers/               # Context providers
-│   │   └── SocketProvider.tsx
-│   │
-│   ├── services/                # API services
+│   ├── services/               # API services
 │   │   ├── agent-service.ts
 │   │   ├── conversation-service.ts
 │   │   ├── friend-service.ts
@@ -431,172 +230,352 @@ zolara-mobile/
 │   │   ├── notification-service.ts
 │   │   ├── post-service.ts
 │   │   ├── user-service.ts
-│   │   └── call/               # Call services
+│   │   └── call/              # Call services
 │   │
-│   ├── store/                   # Zustand stores
+│   ├── store/                  # Zustand stores
 │   │   ├── authStore.ts
 │   │   ├── chatStore.ts
 │   │   ├── conversationsStore.ts
 │   │   ├── agentStore.ts
 │   │   └── userStatusStore.ts
 │   │
-│   ├── tasks/                   # Background tasks
+│   ├── hooks/                  # Custom hooks
+│   │   ├── useAuth.ts
+│   │   ├── useSocket.ts
+│   │   ├── useColorScheme.ts
+│   │   ├── useThemeColor.ts
+│   │   └── userNetworkStatus.ts
+│   │
+│   ├── providers/              # Context providers
+│   │   └── SocketProvider.tsx
+│   │
+│   ├── lib/                    # Libraries
+│   │   ├── axios.ts
+│   │   └── socket.ts
+│   │
+│   ├── tasks/                  # Background tasks
 │   │   └── background-tasks.ts
 │   │
-│   ├── types/                   # TypeScript types
-│   │   └── index.ts
-│   │
-│   ├── utils/                   # Utility functions
+│   ├── utils/                  # Utilities
 │   │   ├── constants.ts
 │   │   └── convertHelper.ts
 │   │
-│   └── global.css              # Global styles (TailwindCSS)
+│   ├── types/                  # TypeScript types
+│   │   └── index.ts
+│   │
+│   ├── constants/              # Constants
+│   │   └── Colors.ts
+│   │
+│   ├── assets/                 # Static assets
+│   │   ├── images/
+│   │   │   ├── brand/         # Logo and branding
+│   │   │   └── default/       # Default images
+│   │   ├── fonts/             # Custom fonts
+│   │   ├── sounds/            # Sound files
+│   │   └── svgs/              # SVG icons
+│   │
+│   └── global.css             # Global styles
 │
-├── .env                         # Environment variables
-├── .env.example                 # Environment template
-├── app.json                     # Expo configuration
-├── eas.json                     # EAS Build configuration
-├── package.json                 # Dependencies
-├── tailwind.config.js          # TailwindCSS config
-├── tsconfig.json               # TypeScript config
-└── README.md                   # Documentation
+├── assets/                     # Public assets
+│   └── sounds/
+│
+├── app.json                    # Expo configuration
+├── babel.config.js            # Babel configuration
+├── metro.config.js            # Metro bundler config
+├── tailwind.config.js         # Tailwind CSS config
+├── tsconfig.json              # TypeScript config
+├── package.json               # Dependencies
+└── .env                       # Environment variables
 ```
 
 ---
 
-## 📜 Scripts
+## 🚀 Getting Started
 
-### Development
-```bash
-npm start              # Start Metro bundler
-npm run android        # Run on Android
-npm run ios            # Run on iOS
-npm run web            # Run on Web
+### Prerequisites
+
+- **Node.js** 18.x or higher
+- **npm** or **yarn** or **pnpm**
+- **Expo CLI** (installed globally)
+- **iOS Simulator** (Mac only) or **Android Studio**
+- **Expo Go app** (for physical device testing)
+
+### Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+EXPO_PUBLIC_API_URL=http://localhost:3000
+EXPO_PUBLIC_SOCKET_URL=ws://localhost:3000
 ```
 
-### Code Quality
-```bash
-npm run lint           # Run ESLint
-npm run test           # Run tests with Jest
-npm run prepare        # Setup Husky hooks
+For production:
+```env
+EXPO_PUBLIC_API_URL=https://your-api-domain.com
+EXPO_PUBLIC_SOCKET_URL=wss://your-api-domain.com
 ```
 
-### Building
+### Installation
+
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Start the development server**
+   ```bash
+   npm start
+   ```
+
+### Running the App
+
+#### On iOS Simulator (Mac only)
 ```bash
-npm run build          # Production build
+npm run ios
 ```
 
-### Utilities
+#### On Android Emulator
 ```bash
-npm run reset-project  # Reset project (clean install)
+npm run android
 ```
+
+#### On Web Browser
+```bash
+npm run web
+```
+
+#### On Physical Device
+1. Install **Expo Go** app from App Store or Play Store
+2. Scan the QR code from the terminal
 
 ---
 
-## 🏗 Architecture
+## 📱 App Features Guide
 
-### Routing - Expo Router
+### Authentication Flow
+1. Welcome screen with logo and branding
+2. Email-based login/signup
+3. OTP verification via email
+4. Profile setup with name and details
+5. Secure JWT token storage
 
-The app uses **Expo Router** with file-based routing:
+### Main Tabs
+- **Home/Chats**: Recent conversations and messages
+- **Contacts**: Phone contacts and Zolara users
+- **Discover**: Find new friends and groups
+- **News**: Social feed and posts
+- **Profile**: User profile and settings
 
+### Chat Features
+- Send text messages
+- Share images, videos, documents
+- Record and send voice messages
+- React to messages with emojis
+- Forward messages
+- Delete messages
+- Message read receipts
+- Typing indicators
+
+### Call Features
+- Voice calls with WebRTC
+- Video calls with camera switching
+- Mute/unmute audio
+- Turn camera on/off
+- Call history
+
+### Group Features
+- Create groups with multiple members
+- Group chat with all features
+- Add/remove members
+- Change group name and avatar
+- Group admin controls
+
+### AI Chatbot
+- Natural language conversations
+- Context-aware responses
+- Powered by Google Generative AI
+
+---
+
+## 🔧 Configuration
+
+### Expo Configuration (`app.json`)
+
+The app is configured with:
+- Custom splash screen
+- App icons for all platforms
+- Required permissions (Camera, Microphone, Contacts, etc.)
+- Background modes for calling
+- Push notification settings
+- Deep linking support
+
+### TypeScript Configuration
+
+Strict TypeScript configuration with:
+- Path aliases for imports
+- Type checking enabled
+- Expo types included
+
+---
+
+## 🎨 Styling
+
+The app uses **NativeWind** (Tailwind CSS for React Native) for styling:
+
+```tsx
+<View className="flex-1 bg-white dark:bg-gray-900">
+  <Text className="text-lg font-bold text-gray-900 dark:text-white">
+    Hello Zolara
+  </Text>
+</View>
 ```
-app/
-├── _layout.tsx              → Common layout
-├── index.tsx                → Entry point (/)
-├── (screens)/
-│   ├── (auth)/
-│   │   └── login.tsx        → /login
-│   └── (tabs)/
-│       ├── _layout.tsx      → Tab layout
-│       └── index.tsx        → /home
-```
 
-### State Management
-
-#### Zustand Stores
-```typescript
-// authStore.ts - Authentication state
-- user: User | null
-- token: string | null
-- login(), logout(), updateUser()
-
-// chatStore.ts - Chat state
-- messages: Message[]
-- activeChat: string | null
-- sendMessage(), receiveMessage()
-
-// conversationsStore.ts - Conversations
-- conversations: Conversation[]
-- updateConversation(), deleteConversation()
-```
-
-#### Context API
-```typescript
-// SocketProvider - Socket.IO connection
-- socket instance
-- connection status
-- event listeners
-```
-
-### API Layer
-
-```typescript
-// services/user-service.ts
-export const userService = {
-  getProfile: () => axios.get('/users/profile'),
-  updateProfile: (data) => axios.put('/users/profile', data),
-  // ...
-}
-
-// Usage in component
-import { userService } from '@/services/user-service';
-
-const profile = await userService.getProfile();
-```
-
-### Real-time Communication
-
-```typescript
-// Socket.IO Events
-socket.on('message:new', handleNewMessage);
-socket.on('user:online', handleUserOnline);
-socket.on('typing', handleTyping);
-
-// WebRTC for Calls
-import { RTCPeerConnection } from 'react-native-webrtc';
-```
+### Theme Support
+- Light and dark mode
+- Auto-detect system theme
+- Persistent theme preference
+- Custom color schemes
 
 ---
 
 ## 🧪 Testing
 
-### Running tests
-
+### Run Tests
 ```bash
-# Run all tests
 npm test
-
-# Run with coverage
-npm test -- --coverage
-
-# Run specific test file
-npm test -- MessageBubble.test.tsx
 ```
 
-### Test structure
+### Linting
+```bash
+npm run lint
+```
+
+---
+
+## 📦 Building for Production
+
+### Build for iOS
+```bash
+npm run build:ios
+```
+
+### Build for Android
+```bash
+npm run build:android
+```
+
+### Build for All Platforms
+```bash
+npm run build
+```
+
+---
+
+## 🔔 Push Notifications
+
+Push notifications are handled with **Expo Notifications**:
+
+- Token registration on app launch
+- Local and remote notifications
+- Custom notification sounds
+- Notification interactions
+- Background notification handling
+
+---
+
+## 📸 Media Handling
+
+### Image Handling
+- Expo Image for optimized loading
+- Image picker for gallery access
+- Camera integration
+- Image viewing with zoom and swipe
+
+### Video Handling
+- Video player with controls
+- Video recording
+- Thumbnail generation
+- Video sharing
+
+### Audio Handling
+- Voice message recording
+- Audio playback
+- Background audio support
+
+---
+
+## 🌐 Network Handling
+
+The app handles offline scenarios:
+- Network status detection
+- Offline message queue
+- Auto-retry failed requests
+- Cached data display
+
+---
+
+## 🔐 Security Features
+
+- JWT token-based authentication
+- Secure storage with Expo SecureStore
+- Encrypted message transmission
+- Biometric authentication support (optional)
+
+---
+
+## 📊 State Management
+
+Using **Zustand** for lightweight state management:
 
 ```typescript
-// components/__tests__/MessageBubble.test.tsx
-import { render, fireEvent } from '@testing-library/react-native';
-import MessageBubble from '../MessageBubble';
+// authStore.ts
+export const useAuthStore = create<AuthState>((set) => ({
+  user: null,
+  isAuthenticated: false,
+  login: (user) => set({ user, isAuthenticated: true }),
+  logout: () => set({ user: null, isAuthenticated: false }),
+}));
+```
 
-describe('MessageBubble', () => {
-  it('renders correctly', () => {
-    const { getByText } = render(
-      <MessageBubble message="Hello" />
-    );
-    expect(getByText('Hello')).toBeTruthy();
-  });
+---
+
+## 🔌 Socket.IO Integration
+
+Real-time features powered by Socket.IO:
+
+- Auto-connect on app launch
+- Reconnection handling
+- Event listeners for messages, calls, status updates
+- Emit events for sending messages, typing indicators
+
+---
+
+## 🛠️ Development Tips
+
+### Path Aliases
+```typescript
+import { useAuth } from '@/hooks/useAuth';
+import { ChatItem } from '@/components/ChatItem';
+import { authStore } from '@/store/authStore';
+```
+
+### Hot Reloading
+Press `r` in the terminal to reload the app during development.
+
+### Debugging
+Use React Native Debugger or Expo Dev Tools for debugging.
+
+---
+
+## 📱 Platform-Specific Code
+
+```typescript
+import { Platform } from 'react-native';
+
+const styles = StyleSheet.create({
+  container: {
+    paddingTop: Platform.OS === 'ios' ? 20 : 0,
+  },
 });
 ```
 
@@ -604,196 +583,73 @@ describe('MessageBubble', () => {
 
 ## 🚀 Deployment
 
-### Android - Google Play Store
+### Prerequisites for Deployment
+- Expo account
+- Apple Developer account (for iOS)
+- Google Play Developer account (for Android)
 
-1. **Preparation**
-   ```bash
-   # Update version in app.json
-   # Create signing key (first time)
-   ```
-
-2. **Build**
-   ```bash
-   eas build --profile production --platform android
-   ```
-
-3. **Submit**
-   ```bash
-   eas submit --platform android
-   ```
-
-### iOS - App Store
-
-1. **Requirements**
-   - Apple Developer Account ($99/year)
-   - App Store Connect setup
-
-2. **Build**
-   ```bash
-   eas build --profile production --platform ios
-   ```
-
-3. **Submit**
-   ```bash
-   eas submit --platform ios
-   ```
-
-### Over-The-Air Updates (OTA)
-
-```bash
-# Publish update (no rebuild required)
-eas update --branch production --message "Fix bug"
-```
+### Deploy to App Stores
+Follow Expo's guide for submitting to:
+- Apple App Store
+- Google Play Store
 
 ---
 
-## 🔧 Troubleshooting
+## 🔧 Scripts Reference
 
-### Metro bundler cache issues
+| Script | Description |
+|--------|-------------|
+| `npm start` | Start Expo development server |
+| `npm run android` | Run on Android emulator |
+| `npm run ios` | Run on iOS simulator |
+| `npm run web` | Run on web browser |
+| `npm test` | Run tests |
+| `npm run lint` | Lint code |
+| `npm run build` | Build for production |
 
+---
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+**Metro bundler cache issues:**
 ```bash
-# Clear cache and restart
-npm start -- --reset-cache
-
-# Or
-npx expo start -c
+expo start -c
 ```
 
-### Android build fails
-
+**Node modules issues:**
 ```bash
-# Clean gradle
-cd android
-./gradlew clean
-cd ..
-
-# Rebuild
-npm run android
-```
-
-### iOS build fails
-
-```bash
-# Reinstall pods
-cd ios
-pod deintegrate
-pod install
-cd ..
-
-# Rebuild
-npm run ios
-```
-
-### Module not found errors
-
-```bash
-# Clear all and reinstall
 rm -rf node_modules
 npm install
-
-# Clear watchman
-watchman watch-del-all
 ```
 
-### Socket connection issues
-
+**iOS build issues:**
 ```bash
-# Check API URL in .env
-# Verify server is running
-# Try using IP instead of localhost
-```
-
-### WebRTC not working
-
-- Ensure permissions are granted
-- Build development client, don't use Expo Go
-- Check network firewall
-
-### Expo Go limitations
-
-Some features don't work on Expo Go:
-- WebRTC
-- Background tasks
-- Custom native modules
-
-**Solution**: Build development client
-
-```bash
-eas build --profile development --platform android
-```
-
----
-
-## 🤝 Contributing
-
-### Contribution process
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Create a Pull Request
-
-### Code Style
-
-- Use **TypeScript** for type safety
-- Follow **Prettier** configuration
-- Adhere to **ESLint** rules
-- Write tests for new features
-- Comment complex code
-
-### Git Commit Convention
-
-```
-feat: Add new feature
-fix: Fix bug
-docs: Update documentation
-style: Format code, no logic changes
-refactor: Refactor code
-test: Add/update tests
-chore: Update build, dependencies
+cd ios
+pod install
+cd ..
 ```
 
 ---
 
 ## 📄 License
 
-Private - All rights reserved
+This project is licensed under the MIT License.
 
 ---
 
-## 👥 Team
+## 🔗 Related Projects
 
-- **Developer**: Nguyễn Văn Minh
-- **Email**: zolaracskh@gmail.com
-- **GitHub**: [@NguyenNguyen0](https://github.com/NguyenNguyen0)
-
----
-
-## 🙏 Acknowledgments
-
-- [Expo Team](https://expo.dev/)
-- [React Native Community](https://reactnative.dev/)
-- [GluestackUI](https://gluestack.io/)
-- All open-source contributors
-
----
-
-## 📞 Support
-
-If you encounter any issues or have questions:
-
-1. Check [Troubleshooting](#-troubleshooting)
-2. Search in [Issues](https://github.com/NguyenNguyen0/zolara/issues)
-3. Create a new issue with:
-   - Detailed problem description
-   - Steps to reproduce
-   - Environment info
-   - Screenshots/logs if applicable
+- [Zolara Server](../zolara-server/README.md) - Backend API server
+- [Zolara Admin](../zolara-admin/README.md) - Admin dashboard
 
 ---
 
 <div align="center">
-  <p>Made with ❤️ by Zolara Team</p>
-  <p>© 2025 Zolara. All rights reserved.</p>
+  
+**Built with ❤️ by the Zolara Team**
+
+[🏠 Back to Main](../README.md)
+
 </div>
